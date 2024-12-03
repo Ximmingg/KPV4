@@ -1,0 +1,2384 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local ESP = Instance.new("TextButton")
+local DEX = Instance.new("TextButton")
+local INFYIELD = Instance.new("TextButton")
+local EUTHV3 = Instance.new("TextButton")
+local Loadb = Instance.new("TextButton")
+local NEXT = Instance.new("TextButton")
+local BACK = Instance.new("TextButton")
+local ChatText = Instance.new("TextBox")
+local LoadbText = Instance.new("TextBox")
+local Chat = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Crashplayer = Instance.new("TextButton")
+local CrashText = Instance.new("TextBox")
+local DisableAdmin = Instance.new("TextButton")
+local rjbutton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+Frame.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.568708599, 0, 0.222392634, 0)
+Frame.Size = UDim2.new(0, 217, 0, 265)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0368663594, 0, -0.00377358496, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 29)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "KP OP PANEL"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0393384248, 0, 0.111008212, 0)
+Frame_2.Size = UDim2.new(0, 199, 0, 227)
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.0393381417, 0, 0.111008212, 0)
+Frame_3.Size = UDim2.new(0, 197, 0, -1)
+
+Frame_4.Parent = Frame
+Frame_4.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.0393381417, 0, 0.967611969, 0)
+Frame_4.Size = UDim2.new(0, 198, 0, -1)
+
+ESP.Name = "ESP"
+ESP.Parent = Frame
+ESP.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ESP.BorderColor3 = Color3.fromRGB(49, 49, 49)
+ESP.BorderSizePixel = 2
+ESP.Position = UDim2.new(0.0393381417, 0, 0.154716983, 0)
+ESP.Size = UDim2.new(0, 90, 0, 32)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextSize = 14.000
+
+DEX.Name = "DEX"
+DEX.Parent = Frame
+DEX.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+DEX.BorderColor3 = Color3.fromRGB(49, 49, 49)
+DEX.BorderSizePixel = 2
+DEX.Position = UDim2.new(0.52073735, 0, 0.154716983, 0)
+DEX.Size = UDim2.new(0, 92, 0, 32)
+DEX.Font = Enum.Font.SourceSans
+DEX.Text = "DEX [buggy]"
+DEX.TextColor3 = Color3.fromRGB(255, 255, 255)
+DEX.TextSize = 14.000
+
+INFYIELD.Name = "INF YIELD"
+INFYIELD.Parent = Frame
+INFYIELD.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+INFYIELD.BorderColor3 = Color3.fromRGB(49, 49, 49)
+INFYIELD.BorderSizePixel = 2
+INFYIELD.Position = UDim2.new(0.0393381417, 0, 0.313207537, 0)
+INFYIELD.Size = UDim2.new(0, 90, 0, 32)
+INFYIELD.Font = Enum.Font.SourceSans
+INFYIELD.Text = "INF YIELD"
+INFYIELD.TextColor3 = Color3.fromRGB(255, 255, 255)
+INFYIELD.TextSize = 14.000
+
+EUTHV3.Name = "EUTH V3"
+EUTHV3.Parent = Frame
+EUTHV3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+EUTHV3.BorderColor3 = Color3.fromRGB(49, 49, 49)
+EUTHV3.BorderSizePixel = 2
+EUTHV3.Position = UDim2.new(0.513992548, 0, 0.313207537, 0)
+EUTHV3.Size = UDim2.new(0, 90, 0, 32)
+EUTHV3.Font = Enum.Font.SourceSans
+EUTHV3.Text = "EUTH V3"
+EUTHV3.TextColor3 = Color3.fromRGB(255, 255, 255)
+EUTHV3.TextSize = 14.000
+
+Loadb.Name = "Loadb"
+Loadb.Parent = Frame
+Loadb.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Loadb.BorderColor3 = Color3.fromRGB(49, 49, 49)
+Loadb.BorderSizePixel = 2
+Loadb.Position = UDim2.new(0.0393381417, 0, 0.475471705, 0)
+Loadb.Size = UDim2.new(0, 90, 0, 32)
+Loadb.Font = Enum.Font.SourceSans
+Loadb.Text = "Loadb"
+Loadb.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loadb.TextSize = 14.000
+
+NEXT.Name = "NEXT"
+NEXT.Parent = Frame
+NEXT.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+NEXT.BorderColor3 = Color3.fromRGB(49, 49, 49)
+NEXT.BorderSizePixel = 2
+NEXT.Position = UDim2.new(0.728110611, 0, 0.864150941, 0)
+NEXT.Size = UDim2.new(0, 41, 0, 18)
+NEXT.Font = Enum.Font.SourceSans
+NEXT.Text = "NEXT"
+NEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+NEXT.TextSize = 14.000
+
+BACK.Name = "BACK"
+BACK.Parent = Frame
+BACK.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BACK.BorderColor3 = Color3.fromRGB(49, 49, 49)
+BACK.BorderSizePixel = 2
+BACK.Position = UDim2.new(0.0737327188, 0, 0.864150941, 0)
+BACK.Size = UDim2.new(0, 41, 0, 18)
+BACK.Font = Enum.Font.SourceSans
+BACK.Text = "BACK"
+BACK.TextColor3 = Color3.fromRGB(255, 255, 255)
+BACK.TextSize = 14.000
+
+ChatText.Name = "Chat Text"
+ChatText.Parent = Frame
+ChatText.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ChatText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChatText.BorderSizePixel = 0
+ChatText.Position = UDim2.new(0.516391754, 0, 0.645283043, 0)
+ChatText.Size = UDim2.new(0, 92, 0, 32)
+ChatText.Font = Enum.Font.SourceSans
+ChatText.Text = ""
+ChatText.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChatText.TextSize = 14.000
+
+LoadbText.Name = "Loadb Text"
+LoadbText.Parent = Frame
+LoadbText.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+LoadbText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LoadbText.BorderSizePixel = 0
+LoadbText.Position = UDim2.new(0.516391754, 0, 0.475471705, 0)
+LoadbText.Size = UDim2.new(0, 92, 0, 32)
+LoadbText.Font = Enum.Font.SourceSans
+LoadbText.Text = ""
+LoadbText.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoadbText.TextSize = 14.000
+
+Chat.Name = "Chat"
+Chat.Parent = Frame
+Chat.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Chat.BorderColor3 = Color3.fromRGB(49, 49, 49)
+Chat.BorderSizePixel = 2
+Chat.Position = UDim2.new(0.0393381417, 0, 0.645283043, 0)
+Chat.Size = UDim2.new(0, 90, 0, 32)
+Chat.Font = Enum.Font.SourceSans
+Chat.Text = "Chat"
+Chat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chat.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.336405516, 0, 0.841509461, 0)
+TextLabel_2.Size = UDim2.new(0, 68, 0, 29)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "You are running Build 3"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Crashplayer.Name = "Crash player"
+Crashplayer.Parent = Frame
+Crashplayer.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Crashplayer.BorderColor3 = Color3.fromRGB(49, 49, 49)
+Crashplayer.BorderSizePixel = 2
+Crashplayer.Position = UDim2.new(0.0368663594, 0, 0.486792445, 0)
+Crashplayer.Size = UDim2.new(0, 91, 0, 32)
+Crashplayer.Visible = false
+Crashplayer.Font = Enum.Font.SourceSans
+Crashplayer.Text = "Crash"
+Crashplayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Crashplayer.TextSize = 14.000
+
+CrashText.Name = "Crash Text"
+CrashText.Parent = Frame
+CrashText.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+CrashText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CrashText.BorderSizePixel = 0
+CrashText.Position = UDim2.new(0.522913218, 0, 0.486792445, 0)
+CrashText.Size = UDim2.new(0, 92, 0, 32)
+CrashText.Visible = false
+CrashText.Font = Enum.Font.SourceSans
+CrashText.Text = ""
+CrashText.TextColor3 = Color3.fromRGB(0, 0, 0)
+CrashText.TextSize = 14.000
+
+DisableAdmin.Name = "DisableAdmin"
+DisableAdmin.Parent = Frame
+DisableAdmin.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+DisableAdmin.BorderColor3 = Color3.fromRGB(49, 49, 49)
+DisableAdmin.BorderSizePixel = 2
+DisableAdmin.Position = UDim2.new(0.0393381417, 0, 0.313207537, 0)
+DisableAdmin.Size = UDim2.new(0, 90, 0, 32)
+DisableAdmin.Visible = false
+DisableAdmin.Font = Enum.Font.SourceSans
+DisableAdmin.Text = "Disable admin"
+DisableAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+DisableAdmin.TextSize = 14.000
+
+rjbutton.Name = "rj button"
+rjbutton.Parent = Frame
+rjbutton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+rjbutton.BorderColor3 = Color3.fromRGB(49, 49, 49)
+rjbutton.BorderSizePixel = 2
+rjbutton.Position = UDim2.new(0.422676057, 0, 0.788227797, 0)
+rjbutton.Size = UDim2.new(0, 33, 0, 14)
+rjbutton.Font = Enum.Font.SourceSans
+rjbutton.Text = "RJ"
+rjbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+rjbutton.TextSize = 14.000
+
+-- Scripts:
+
+local function PYGVZJ_fake_script() -- ESP.ESP 
+	local script = Instance.new('LocalScript', ESP)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local espEnabled = false
+	local espInstances = {}
+	
+	local function createESP(player)
+		local character = player.Character or player.CharacterAdded:Wait()
+		local head = character:WaitForChild("Head")
+	
+		local billboard = Instance.new("BillboardGui")
+		billboard.Name = "ESP"
+		billboard.Adornee = head
+		billboard.Size = UDim2.new(4, 0, 4, 0) -- 2x smaller
+		billboard.AlwaysOnTop = true
+		billboard.StudsOffset = Vector3.new(0, 1, 0)
+	
+		local frame = Instance.new("Frame", billboard)
+		frame.Size = UDim2.new(0.5, 0, 0.5, 0) -- 2x smaller
+		frame.BackgroundTransparency = 0.5
+		frame.BackgroundColor3 = Color3.new(1, 0, 0)
+		frame.Position = UDim2.new(0.25, 0.3, 0.4, 0.3) -- Adjusted for smaller size
+	
+		local textLabel = Instance.new("TextLabel", billboard)
+		textLabel.Size = UDim2.new(1, 0, 0.25, 0) -- 2x smaller
+		textLabel.BackgroundTransparency = 1
+		textLabel.TextColor3 = Color3.new(1, 1, 1)
+		textLabel.TextStrokeTransparency = 0.5
+		textLabel.TextScaled = false
+	
+	
+		billboard.Parent = head
+		espInstances[player] = billboard
+	
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if espEnabled and espInstances[player] then
+				local localPlayer = Players.LocalPlayer
+				if localPlayer and localPlayer.Character and localPlayer.Character:FindFirstChild("Head") then
+					local localHead = localPlayer.Character.Head
+					local distance = (head.Position - localHead.Position).Magnitude
+					textLabel.Text = string.format("%s (%s) - %.1f studs", player.DisplayName, player.Name, distance)
+				else
+					connection:Disconnect()
+				end
+			else
+				connection:Disconnect()
+			end
+		end)
+	end
+	
+	local function removeESP(player)
+		if espInstances[player] then
+			espInstances[player]:Destroy()
+			espInstances[player] = nil
+		end
+	end
+	
+	local function onPlayerAdded(player)
+		player.CharacterAdded:Connect(function()
+			if espEnabled then
+				createESP(player)
+			end
+		end)
+	end
+	
+	Players.PlayerAdded:Connect(onPlayerAdded)
+	
+	for _, player in Players:GetPlayers() do
+		onPlayerAdded(player)
+	end
+	
+	local button = script.Parent
+	script.Parent.MouseButton1Up:Connect(function()
+	espEnabled = not espEnabled
+	if espEnabled then
+		for _, player in Players:GetPlayers() do
+			if player.Character then
+				createESP(player)
+			end
+		end
+	else
+		for _, player in Players:GetPlayers() do
+			removeESP(player)
+		end
+	end
+	end)
+end
+coroutine.wrap(PYGVZJ_fake_script)()
+local function IWKEN_fake_script() -- DEX.DEX 
+	local script = Instance.new('LocalScript', DEX)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/XaHAPAt8"))()
+	end)
+end
+coroutine.wrap(IWKEN_fake_script)()
+local function PCGELRM_fake_script() -- INFYIELD.INF YIELD 
+	local script = Instance.new('LocalScript', INFYIELD)
+
+	script	.Parent.MouseButton1Up:Connect(function()
+		
+	end)
+end
+coroutine.wrap(PCGELRM_fake_script)()
+local function DWVC_fake_script() -- EUTHV3.dadmin 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+	
+		game.Players:Chat(":btools")
+		task.wait(1.677777777777)
+		while task.wait() do
+			game.Players:Chat(":unview |!wait 1.3 |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview")
+		end
+	end)
+end
+coroutine.wrap(DWVC_fake_script)()
+local function BIYBV_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(BIYBV_fake_script)()
+local function GDKKV_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(GDKKV_fake_script)()
+local function PWDF_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(PWDF_fake_script)()
+local function TSKD_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(TSKD_fake_script)()
+local function MVJKPZT_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(MVJKPZT_fake_script)()
+local function MSCLQT_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(MSCLQT_fake_script)()
+local function IZKPW_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(IZKPW_fake_script)()
+local function HYPG_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(HYPG_fake_script)()
+local function UMWCNQ_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(UMWCNQ_fake_script)()
+local function GCUR_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(GCUR_fake_script)()
+local function LRHYZT_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(LRHYZT_fake_script)()
+local function JSWEW_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(JSWEW_fake_script)()
+local function MTWMA_fake_script() -- EUTHV3.F3X HANDLER 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	local Players = game:GetService("Players")
+	
+	if not game.Players.LocalPlayer:WaitForChild("Backpack"):FindFirstChild("Folder") then
+		game.Players:Chat(":f3x")
+		end
+		end)
+end
+coroutine.wrap(MTWMA_fake_script)()
+local function CYIGFOA_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(CYIGFOA_fake_script)()
+local function SXXRZT_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(SXXRZT_fake_script)()
+local function OIJNSJI_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(OIJNSJI_fake_script)()
+local function SUPMRUW_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(SUPMRUW_fake_script)()
+local function OPWH_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(OPWH_fake_script)()
+local function HQDRAN_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(HQDRAN_fake_script)()
+local function LFCRX_fake_script() -- EUTHV3.EUTH V2 10 
+	local script = Instance.new('LocalScript', EUTHV3)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local createdParts = {}
+		local player = game:GetService("Players").LocalPlayer
+		local serverEndpoint = player.Backpack.Folder.SyncAPI.ServerEndpoint
+	
+		local function createPart()
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Ball",
+				[3] = CFrame.new(216.97491455078125, 9.16448974609375, -256.0249938964844) * CFrame.Angles(-0, 0, -0),
+				[4] = workspace
+			}
+	
+			local success, newPart = pcall(function() 
+				return serverEndpoint:InvokeServer(unpack(args)) 
+			end)
+	
+			if success and newPart then
+				newPart.BrickColor = BrickColor.new("Black")
+				newPart.Transparency = 0.6
+				newPart.Material = Enum.Material.Neon
+				table.insert(createdParts, newPart)
+			else
+				warn("Failed to create part:", newPart)
+			end
+		end
+	
+		for i = 1, 500 do
+			coroutine.wrap(function()
+				createPart()
+	
+				-- If this is not the first part, weld it to the previous part
+				if #createdParts > 0 then
+					local previousPart = createdParts[#createdParts - 1]
+					local weldConstraint = Instance.new("WeldConstraint")
+					weldConstraint.Part0 = newPart
+					weldConstraint.Part1 = previousPart
+					weldConstraint.Parent = workspace
+				end
+	
+				task.wait()
+			end)()
+		end
+	
+		task.wait(1)
+	
+		for _, part in pairs(createdParts) do
+			coroutine.wrap(function()
+				local unanchorArgs = {
+					[1] = "SyncAnchor",
+					[2] = {
+						[1] = {
+							["Part"] = part, 
+							["Anchored"] = false
+						}
+					}
+				}
+	
+				local success = pcall(function() 
+					serverEndpoint:InvokeServer(unpack(unanchorArgs)) 
+				end)
+	
+				if not success then
+					warn("Failed to unanchor part:", part)
+				end
+			end)()
+		end
+	end)
+end
+coroutine.wrap(LFCRX_fake_script)()
+local function LXDB_fake_script() -- Loadb.Loadb 
+	local script = Instance.new('LocalScript', Loadb)
+
+	script.Parent.MouseButton1Up:Connect(function()
+	
+	
+	local plrGui = game:GetService("Players").LocalPlayer.PlayerGui
+	function descendant(parent, name)
+		local children = parent:GetChildren()
+		if #children > 0 then
+			for _, a in ipairs(children) do
+				if a.Name == name then
+					return a
+				else
+					local descendantFound = descendant(a, name)
+					if descendantFound then
+						return descendantFound
+					end
+				end
+			end
+		end
+		return nil
+	end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	local cb = plrGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
+	local prev = cb.Text
+	cb:CaptureFocus()
+	cb.Text = "/e :loadb" .. script.Parent.Parent["Loadb Text"].Text
+	cb:ReleaseFocus(true)
+	if #prev > 0 then
+		cb:CaptureFocus()
+	end
+	end)
+end
+coroutine.wrap(LXDB_fake_script)()
+local function CFBKSBO_fake_script() -- NEXT.LocalScript 
+	local script = Instance.new('LocalScript', NEXT)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.DEX.Visible = false
+		script.Parent.Parent["EUTH V3"].Visible = false
+		script.Parent.Parent["Loadb Text"].Visible = false
+		script.Parent.Parent.Loadb.Visible = false
+		script.Parent.Parent.ESP.Visible = false
+		script.Parent.Parent["Chat Text"].Visible = false
+		script.Parent.Parent.Chat.Visible = false
+		script.Parent.Parent["INF YIELD"].Visible = false
+		
+		script.Parent.Parent.DisableAdmin.Visible = true
+		script.Parent.Parent["Crash player"].Visible = true
+		script.Parent.Parent["Crash Text"].Visible = true
+		
+	end)
+	
+end
+coroutine.wrap(CFBKSBO_fake_script)()
+local function CYYUG_fake_script() -- BACK.LocalScript 
+	local script = Instance.new('LocalScript', BACK)
+
+	script.Parent.Parent["Crash player"].Visible = false
+	script.Parent.Parent["Crash Text"].Visible = false
+	script.Parent.Parent.DisableAdmin.Visible = false
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.DEX.Visible = true
+		script.Parent.Parent["EUTH V3"].Visible = true
+		script.Parent.Parent["Loadb Text"].Visible = true
+		script.Parent.Parent.Loadb.Visible = true
+		script.Parent.Parent.ESP.Visible = true
+		script.Parent.Parent["Chat Text"].Visible = true
+		script.Parent.Parent.Chat.Visible = true
+		script.Parent.Parent["INF YIELD"].Visible = true
+		
+		script.Parent.Parent.DisableAdmin.Visible = false
+		script.Parent.Parent["Crash player"].Visible = false
+		script.Parent.Parent["Crash Text"].Visible = false
+	
+	end)
+end
+coroutine.wrap(CYYUG_fake_script)()
+local function YDVJLA_fake_script() -- Chat.Loadb 
+	local script = Instance.new('LocalScript', Chat)
+
+	script.Parent.MouseButton1Up:Connect(function()
+	
+	
+	local plrGui = game:GetService("Players").LocalPlayer.PlayerGui
+	function descendant(parent, name)
+		local children = parent:GetChildren()
+		if #children > 0 then
+			for _, a in ipairs(children) do
+				if a.Name == name then
+					return a
+				else
+					local descendantFound = descendant(a, name)
+					if descendantFound then
+						return descendantFound
+					end
+				end
+			end
+		end
+		return nil
+	end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	local cb = plrGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
+	local prev = cb.Text
+	cb:CaptureFocus()
+	cb.Text = script.Parent.Parent["Chat Text"].Text
+	cb:ReleaseFocus(true)
+	if #prev > 0 then
+		cb:CaptureFocus()
+	end
+	end)
+end
+coroutine.wrap(YDVJLA_fake_script)()
+local function YNSBGRR_fake_script() -- Frame.adminonload 
+	local script = Instance.new('LocalScript', Frame)
+
+	-- Get the LocalPlayer
+	local Players = game:GetService("Players")
+	local player = game.Players.LocalPlayer
+	local pl = game.Players.LocalPlayer
+	
+	-- Get the admin pad
+	local pad = game.Workspace.SecureParts.AdminPads:WaitForChild("Touch to get admin")
+	local padparent = game.Workspace.SecureParts.AdminPads
+	print("Got pad")
+	
+	-- If the player and their HumanoidRootPart exist, set the CFrame
+	function Check()
+		while task.wait(0.04) do
+			local pad = game.Workspace.SecureParts.AdminPads:WaitForChild("Touch to get admin")
+			local padparent = game.Workspace.SecureParts.AdminPads
+			if not padparent:FindFirstChild(pl.Name .. "'s admin") then
+				print("ISNT admin, Setting admin")
+				if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					local padPivot = pad:GetPivot()
+					player.Character.HumanoidRootPart.CFrame = CFrame.new(padPivot.Position)
+					task.wait(0.5)
+					if not game.Players.LocalPlayer:WaitForChild("Backpack"):FindFirstChild("Folder") then
+						game.Players:Chat(":f3x")
+					end
+				end
+			end
+		end
+	end
+	task.wait(1)
+	Check()
+	
+end
+coroutine.wrap(YNSBGRR_fake_script)()
+local function FFWDQAX_fake_script() -- Crashplayer.Loadb 
+	local script = Instance.new('LocalScript', Crashplayer)
+
+	local Players = game:GetService("Players")
+	local workspace = game:GetService("Workspace")
+	local crashPlayerText = script.Parent.Parent:WaitForChild("Crash player"):WaitForChild("Crash player Text")
+	
+	-- Define the supported part types
+	local supportedPartTypes = {
+	    "TrussPart",
+	    "WedgePart",
+	    "CornerPart",
+	    "CylinderPart",
+	    "BallPart",
+	    "Seat",
+	    "VehicleSeat",
+	    "SpawnLocation"
+	}
+	
+	for _, player in ipairs(Players:GetPlayers()) do
+	    -- Button click event
+	    script.Parent.MouseButton1Click:Connect(function()
+	        print("Button clicked for player: " .. player.Name)
+	
+	        -- Get the text from the crash text textbox
+	        local targetPlayerName = crashPlayerText.Text
+	
+	        -- Find the player in the Players service
+	        local targetPlayer = Players:FindFirstChild(targetPlayerName)
+	
+	        print("Target player found: " .. tostring(targetPlayer))
+	
+	        if targetPlayer then
+	            -- Run the function for the target player
+	            local character = targetPlayer.Character
+	            if character then
+	                local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	                local heightOffset = Vector3.new(0, 1, 0)
+	
+	                -- Get the selected part type from the user
+	                local selectedPartType = script.Parent.Parent:WaitForChild("PartType"):GetValue()
+	
+	                -- Check if the selected part type is valid
+	                if table.find(supportedPartTypes, selectedPartType) then
+	                    -- Create a part above the player's head and sync it with the server
+	                    local argsCreatePart = {
+	                        [1] = "CreatePart",  -- Custom action to create the part server-side
+	                        [2] = selectedPartType,  -- Part type
+	                        [3] = CFrame.new(humanoidRootPart.Position + heightOffset) * CFrame.Angles(0, 0, 0),
+	                        [4] = workspace
+	                    }
+	                    print("Creating part...")
+	                    game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsCreatePart))
+	
+	                    -- Create and sync the mesh using the server
+	                    local argsCreateMeshes = {
+	                        [1] = "CreateMeshes",  -- Custom action to create the meshes server-side
+	                        [2] = {
+	                            [1] = {
+	                                ["Part"] = workspace[selectedPartType],  -- Reference to the part created above
+	                            }
+	                        }
+	                    }
+	                    print("Creating mesh...")
+	                    game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsCreateMeshes))
+	
+	                    -- Clone the part multiple times
+	                    print("Cloning part...")
+	                    for i = 1, 10 do
+	                        local argsClone = {
+	                            [1] = "Clone",
+	                            [2] = {
+	                                [1] = workspace[selectedPartType]
+	                            },
+	                            [3] = workspace
+	                        }
+	                        game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsClone))
+	                    end
+	
+	                    -- Move and scale the cloned parts
+	                    print("Moving and scaling cloned parts...")
+	                    for i = 1, 10 do
+	                        local clonedPart = workspace[selectedPartType]
+	                        local argsSyncMoveScale = {
+	                            [1] = "SyncMesh",  -- Sync move and scale action
+	                            [2] = {
+	                                [1] = {
+	                                    ["Part"] = clonedPart,
+	                                    ["CFrame"] = CFrame.new(humanoidRootPart.Position + heightOffset) * CFrame.Angles(0, 0, 0),
+	                                    ["Scale"] = Vector3.new(2, 2, 2)  -- Scale the part
+	                                }
+	                            }
+	                        }
+	                        game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsSyncMoveScale))
+	                    end
+	                else
+	                    print("Invalid part type selected")
+	                end
+	            end
+	        end
+	    end)
+	end
+	
+	
+end
+coroutine.wrap(FFWDQAX_fake_script)()
+local function YVEBRAQ_fake_script() -- Frame.PagesHandler 
+	local script = Instance.new('LocalScript', Frame)
+
+	--makes sure the pages are not overriding eachother
+	
+	script.Parent["Crash player"].Visible = false
+	script.Parent["Crash Text"].Visible = false
+	
+end
+coroutine.wrap(YVEBRAQ_fake_script)()
+local function KSCGY_fake_script() -- Frame.dissapearhandler 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+	-- Set the ResetOnSpawn property to false
+	local screenGui = game.StarterGui:WaitForChild("ScreenGui")
+	screenGui.ResetOnSpawn = false
+	
+end
+coroutine.wrap(KSCGY_fake_script)()
+local function YABJJL_fake_script() -- Frame.anticrash 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Players = game:GetService("Players")
+	local workspace = game:GetService("Workspace")
+	local RunService = game:GetService("RunService")
+	
+	local function asd()
+	    -- Wait for the next frame before running the function
+	    RunService.RenderStepped:Wait()
+	    
+	    for _, a in workspace:GetDescendants() do
+	        if a:IsA("SpecialMesh") then
+	            a:Destroy()
+	        end
+	    end
+	end
+	while true do
+		RunService.RenderStepped:Wait()
+		asd()
+	end
+	
+	
+	
+end
+coroutine.wrap(YABJJL_fake_script)()
+local function YQSBXMF_fake_script() -- Frame.antipunishantijail 
+	local script = Instance.new('LocalScript', Frame)
+
+	--var
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer or Players.PlayerAdded:Wait()
+	
+	--functions
+	local function onChildAddedToLighting(child)
+		if child.Name == player.DisplayName then
+			game.Players:Chat(":unpunish me")
+		end
+	end
+	
+	local function onChildAddedToWorkspace(child)
+		if child.Name == player.Name .. "_ADONISJAIL" then
+			game.Players:Chat(":free")
+		end
+	end
+	
+	-- Connect to ChildAdded events
+	game:GetService("Lighting").ChildAdded:Connect(onChildAddedToLighting)
+	game:GetService("Workspace").ChildAdded:Connect(onChildAddedToWorkspace)
+	
+	-- Call the functions automatically
+	for _, child in ipairs(game:GetService("Lighting"):GetChildren()) do
+	    onChildAddedToLighting(child)
+	end
+	
+	for _, child in ipairs(game:GetService("Workspace"):GetChildren()) do
+	    onChildAddedToWorkspace(child)
+	end
+	
+	--notif
+	local CoreGui = game:GetService("StarterGui")
+	
+	CoreGui:SetCore("SendNotification", {
+		Title = "Script Successfully Loaded.";
+		Text = "now dont go crashing dolpin you litte s-";
+		Duration = 5;
+		Button1 = "d";
+	})
+	
+	
+end
+coroutine.wrap(YQSBXMF_fake_script)()
+local function XWAWQE_fake_script() -- DisableAdmin.dadmin 
+	local script = Instance.new('LocalScript', DisableAdmin)
+
+	script.Parent.MouseButton1Up:Connect(function()
+	
+		
+		while wait(0.00000000000000000000000000000000000001) do
+			game.Players:Chat(":unview |!wait 1.3 |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview |:unview |!wait 1.3 |:unview")
+		end
+	end)
+end
+coroutine.wrap(XWAWQE_fake_script)()
+local function XUGNC_fake_script() -- rjbutton.rejoin 
+	local script = Instance.new('LocalScript', rjbutton)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		game.Players:Chat("!rejoin")
+		end)
+end
+coroutine.wrap(XUGNC_fake_script)()
+local function OARHM_fake_script() -- Frame.antitalk 
+	local script = Instance.new('LocalScript', Frame)
+
+	wait(3)
+	local CoreGui = game:GetService("StarterGui")
+	while true do
+		game.CoreGui.BubbleChat.DescendantAdded:Connect(function(obj)
+			if obj:IsA("TextLabel") then
+				if #obj.Text > 20 then
+					obj.Parent.Parent.Visible = false
+				end
+			end
+	if error then return end
+	
+		
+		end)
+		task.wait()
+	end
+	
+end
+coroutine.wrap(OARHM_fake_script)()
+local function IFSXXU_fake_script() -- ScreenGui.lb 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	-- Services
+	local Players = game:GetService("Players")
+	local workspace = game:GetService("Workspace")
+	local RunService = game:GetService("RunService")
+	_G.a = 0
+	-- GUI Variables
+	local playerListFrame = Instance.new("Frame")
+	local buttonTemplate = Instance.new("TextButton")
+	local userList = {}
+	
+	local screenGui = Instance.new("ScreenGui")
+	screenGui.Parent = game.Players.LocalPlayer.PlayerGui
+	screenGui.Name = "PlayerListGUI"
+	screenGui.ResetOnSpawn = false
+	
+	playerListFrame.Size = UDim2.new(0, 300, 0, 400)
+	playerListFrame.Position = UDim2.new(0.1, 0, 0.1, 0)
+	playerListFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	playerListFrame.BorderSizePixel = 2
+	playerListFrame.BorderColor3 = Color3.fromRGB(100, 100, 100)
+	playerListFrame.Parent = screenGui
+	
+	local dragging = false
+	local dragInput, dragStart, startPos
+	
+	local function updatePosition(input)
+		if dragging then
+			local delta = input.Position - dragStart
+			playerListFrame.Position = UDim2.new(playerListFrame.Position.X.Scale, startPos.X.Offset + delta.X, playerListFrame.Position.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	end
+	
+	local function beginDrag(input)
+		dragging = true
+		dragStart = input.Position
+		startPos = playerListFrame.Position
+	end
+	
+	local function endDrag()
+		dragging = false
+	end
+	
+	playerListFrame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			beginDrag(input)
+		end
+	end)
+	
+	playerListFrame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			updatePosition(input)
+		end
+	end)
+	
+	playerListFrame.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			endDrag()
+		end
+	end)
+	
+	-- Function to udpate the player list
+	local function updatePlayerList()
+		-- Clear previous player butrtons
+		for _, button in pairs(userList) do
+			button:Destroy()
+		end
+		userList = {}
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			local button = buttonTemplate:Clone()
+			button.Size = UDim2.new(1, -10, 0, 30)
+			button.Position = UDim2.new(0, 5, 0, 35 * (#userList + 1))
+			button.Text = player.Name
+			button.Parent = playerListFrame
+	
+			-- Button click event
+			button.MouseButton1Click:Connect(function()
+				print("Button clicked for player: " .. player.Name)
+				_G.a = 1
+				-- Chat command when button is clicked
+	
+				-- Run the function for the clicked player
+				local character = player.Character
+				if character then
+					local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+					local heightOffset = Vector3.new(0, 1, 0)
+	
+					-- Create a part above the player's head and sync it with the server
+					local argsCreatePart = {
+						[1] = "CreatePart",  -- Custom action to create the part server-side
+						[2] = "Corner",  -- Part type
+						[3] = CFrame.new(humanoidRootPart.Position + heightOffset) * CFrame.Angles(0, 0, 0),
+						[4] = workspace
+					}
+					game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsCreatePart))
+	
+					-- Create and sync the mesh using the server
+					local argsCreateMeshes = {
+						[1] = "CreateMeshes",  -- Custom action to create the meshes server-side
+						[2] = {
+							[1] = {
+								["Part"] = workspace.CornerWedge,  -- Reference to the part created above
+							}
+						}
+					}
+					game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsCreateMeshes))
+	
+					-- Sync mesh ID
+					local argsSyncMeshId = {
+						[1] = "SyncMesh",
+						[2] = {
+							[1] = {
+								["Part"] = workspace.CornerWedge,
+								["MeshId"] = "rbxassetid://18466400619",  -- Replace with your MeshId
+								["Scale"] = Vector3.new(2, 2, 2)  -- Scaling the part as well
+							}
+						}
+					}
+					game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsSyncMeshId))
+	
+					local cloneCount = 10
+	
+	
+					for i = 1, cloneCount do
+						coroutine.wrap(function()
+							local argsClone = {
+								[1] = "Clone",
+								[2] = {
+									[1] = workspace.CornerWedge
+								},
+								[3] = workspace
+							}
+							game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsClone))
+						end)()
+					end
+	
+	
+					for i = 1, cloneCount do
+						coroutine.wrap(function()
+							local clonedPart = workspace.CornerWedge
+							local argsSyncMoveScale = {
+								[1] = "SyncMesh",  -- Sync move and scale action
+								[2] = {
+									[1] = {
+										["Part"] = clonedPart,
+										["CFrame"] = CFrame.new(humanoidRootPart.Position + heightOffset) * CFrame.Angles(0, 0, 0),
+										["Scale"] = Vector3.new(2, 2, 2)  -- Scale the part
+									}
+								}
+							}
+							game:GetService("Players").LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsSyncMoveScale))
+						end)()
+						wait(1)
+						local itemsToRemove = {}
+						if workspace:FindFirstChild("CornerWedge") then
+							table.insert(itemsToRemove, workspace.CornerWedge)
+						end
+						if #itemsToRemove > 0 then
+							local args = {
+								[1] = "Remove",
+								[2] = itemsToRemove
+							}
+							game.Players.LocalPlayer.Backpack.Folder.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+						else
+							print("No valid items found to remove.")
+						end
+						wait(2)
+						game.Players:Chat(":notools")
+						wait(1)
+						game.Players:Chat(":f3x")
+						_G.a = 0
+					end
+				end
+			end)
+	
+			table.insert(userList, button)
+		end
+	end
+	
+	-- Set up the template button
+	buttonTemplate.Size = UDim2.new(1, -10, 0, 30)
+	buttonTemplate.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	buttonTemplate.TextColor3 = Color3.fromRGB(255, 255, 255)
+	buttonTemplate.TextSize = 14
+	buttonTemplate.Text = "Player Button"
+	buttonTemplate.Parent = playerListFrame
+	
+	while wait(0.125) do 
+		updatePlayerList()
+	end
+	
+	
+end
+coroutine.wrap(IFSXXU_fake_script)()
+-- nil.anticrashhelper is disabled.
